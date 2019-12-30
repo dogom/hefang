@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: db
+  messages:
+    encoding: UTF-8
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root:  ERROR
+    org.springframework:  INFO
+    org.mybatis:  DEBUG
+    com.dmm.hefang.db:  DEBUG
