@@ -60,6 +60,13 @@
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
 
+        <table tableName="category">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="goods">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+
 <!--        <table tableName="litemall_admin">-->
 <!--            <generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
 <!--            <columnOverride column="role_ids" javaType="java.lang.Integer[]"-->
