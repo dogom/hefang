@@ -42,5 +42,13 @@ public class GoodsController {
         return resultVO;
     }
 
+    @GetMapping("/gbc")
+    public ResultVO gbc(Integer categoryId){
+        ResultVO resultVO = new ResultVO();
+        List<Goods> list = goodsService.getByCategoryId(categoryId);
+        resultVO.setData(list);
+        return resultVO;
+    }
+
 
 }

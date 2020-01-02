@@ -36,4 +36,11 @@ public class GoodsService {
         PageHelper.startPage(vo.getPageNum(),vo.getPageSize());
         return goodsMapper.selectByExample(example);
     }
+
+
+    public List<Goods> getByCategoryId(Integer categoryId) {
+        GoodsExample example = new GoodsExample();
+        example.or().andIsDeleteEqualTo(0).andStatusEqualTo(0).andCategoryIdEqualTo(categoryId);
+        return goodsMapper.selectByExample(example);
+    }
 }
